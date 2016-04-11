@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="page-header">
+    <h1>DowJones Authentication Example</h1>
+  </div>
+  {{#if user.loggedIn}}
+    <button class="launch">Get Data</button>
+    <a href="/logout">Logout</a>
+
+  {{else}}
+    <a href="/login">Login</a>
+  {{/if}}
+</div>
